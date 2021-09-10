@@ -27,3 +27,10 @@ html {
   display: flex;
   justify-content: space-evenly;
 }
+img {
+  height: 200px;
+  width: auto;
+}
+#citiesText {
+  color: white;
+}
