@@ -1,14 +1,18 @@
 import React from "react";
 
 const Cities = ({ data }) => {
- return (
- <section>
- <h2>Sunrise</h2>
-    <p>{data.sunrise}</p>
- <h2>Sunset</h2>
-    <p>{data.sunset}</p>
- </section>
-)};
-
+  return (
+    <section>
+      <div id="sunrise" class="suntime">
+        <h2>Sunrise</h2>
+        <p id="sunriseTime">{data.sunrise}</p>
+      </div>
+      <div id="sunset" class="suntime">
+        <h2>Sunset</h2>
+        <p id="sunsetTime">{data.sunset}</p>
+      </div>
+    </section>
+  );
+};
 
 export default Cities;
