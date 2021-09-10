@@ -22,7 +22,6 @@ function App() {
       )
       const data = await res.json();
       setAstronomyData(data)
-      console.log(astronomyData)
     }
     getData()
   },[location])
