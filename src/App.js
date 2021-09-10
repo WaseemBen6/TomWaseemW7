@@ -21,24 +21,24 @@ function App() {
     console.log(position);
   }
 
-  // useEffect(() => {
-  //   async function getData() {
-  //     let res;
-  //     if (typeof location === "string") {
-  //       res = await fetch(
-  //         `https://api.ipgeolocation.io/astronomy?apiKey=${apiKey}&location=${location}`
-  //       );
-  //     } else if (typeof location === "object") {
-  //       res = await fetch(
-  //         `https://api.ipgeolocation.io/astronomy?apiKey=${apiKey}&lat=${location.latitude}&long=${location.longitude}
-  //         `
-  //       );
-  //     }
-  //     const data = await res.json();
-  //     setAstronomyData(data);
-  //   }
-  //   getData();
-  // }, [location]);
+  useEffect(() => {
+    async function getData() {
+      let res;
+      if (typeof location === "string") {
+        res = await fetch(
+          `https://api.ipgeolocation.io/astronomy?apiKey=${apiKey}&location=${location}`
+        );
+      } else if (typeof location === "object") {
+        res = await fetch(
+          `https://api.ipgeolocation.io/astronomy?apiKey=${apiKey}&lat=${location.latitude}&long=${location.longitude}
+          `
+        );
+      }
+      const data = await res.json();
+      setAstronomyData(data);
+    }
+    getData();
+  }, [location]);
 
   function getUsersLocation() {
     navigator.geolocation.getCurrentPosition(
