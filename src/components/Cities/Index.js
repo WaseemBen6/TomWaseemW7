@@ -2,21 +2,28 @@ import React from "react";
 
 const Cities = ({ data }) => {
   return (
-    <section id="citiesBox">
-      <div id="sunrise" class="suntime">
-        <h2>Sunrise</h2>
-        <p id="sunriseTime">{data.sunrise}</p>
+    <>
+      <div id="solarnoon" class="suntime">
+        <h2>Solar noon</h2>
+        <p id="solarnoontime">{data.solar_noon}</p>
         <img src="" alt="" />
       </div>
-      <div id="dayLength">
-        <p>Length of the day: {data.day_length}</p>
-      </div>
-      <div id="sunset" class="suntime">
-        <h2>Sunset</h2>
-        <p id="sunsetTime">{data.sunset}</p>
-        <img src="" alt="" />
-      </div>
-    </section>
+      <section id="citiesBox">
+        <div id="sunrise" class="suntime">
+          <h2>Sunrise</h2>
+          <p id="sunriseTime">{data.sunrise}</p>
+          <img src="" alt="" />
+        </div>
+        <div id="dayLength">
+          <p>Length of the day: {data.day_length}</p>
+        </div>
+        <div id="sunset" class="suntime">
+          <h2>Sunset</h2>
+          <p id="sunsetTime">{data.sunset}</p>
+          <img src="" alt="" />
+        </div>
+      </section>
+    </>
   );
 };
 
