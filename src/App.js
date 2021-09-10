@@ -47,11 +47,11 @@ function App() {
   }
 
   return (
-    <>
+    <main id="container">
       <Cities data={astronomyData} />
-      <InputLocation onChange={changeLocationState} />
-      <ButtonLocation onClick={getUsersLocation} />
-    </>
+      <InputLocation id="location" onChange={changeLocationState} />
+      <ButtonLocation id="cities" onClick={getUsersLocation} />
+    </main>
   );
 }
 
