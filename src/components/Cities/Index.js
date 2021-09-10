@@ -11,6 +11,9 @@ const Cities = ({ data }) => {
         <h2>Sunset</h2>
         <p id="sunsetTime">{data.sunset}</p>
       </div>
+      <div id ="dayLength">
+        <p>Length of the day: {data.day_length}</p>
+      </div>
     </section>
   );
 };

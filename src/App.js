@@ -48,9 +48,9 @@ function App() {
 
   return (
     <>
+      <Cities data={astronomyData} />
       <InputLocation onChange={changeLocationState} />
       <ButtonLocation onClick={getUsersLocation} />
-      <Cities data={astronomyData} />
     </>
   );
 }
