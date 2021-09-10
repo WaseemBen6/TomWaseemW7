@@ -23,3 +23,7 @@ html {
 #location {
   position: center;
 }
+#citiesBox {
+  display: flex;
+  justify-content: space-evenly;
+}
