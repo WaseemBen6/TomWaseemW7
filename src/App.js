@@ -21,6 +21,7 @@ function App() {
     console.log(position);
   }
 
+  //GET request params determined by the data type of state
   useEffect(() => {
     async function getData() {
       let res;
