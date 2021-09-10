@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import logo from "./logo.svg";
+import Input from "./components/Input/Index";
 import "./App.css";
 
 function App() {
@@ -9,7 +9,11 @@ function App() {
     setLocation(e.target.value);
   }
 
-  return <></>;
+  return (
+    <>
+      <Input onChange={changeLocationState} />
+    </>
+  );
 }
 
 export default App;
