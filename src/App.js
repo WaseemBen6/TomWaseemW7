@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Input from "./components/Input/Index";
+import InputLocation from "./components/Input/Index";
 import "./App.css";
 
 function App() {
@@ -7,11 +7,12 @@ function App() {
 
   function changeLocationState(e) {
     setLocation(e.target.value);
+    console.log(location);
   }
 
   return (
     <>
-      <Input onChange={changeLocationState} />
+      <InputLocation onChange={changeLocationState} />
     </>
   );
 }
